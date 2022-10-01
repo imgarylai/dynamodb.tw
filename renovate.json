@@ -2,5 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
+  ],
+  "automerge": true,
+  "automergeStrategy": "rebase",
+  "packageRules": [
+    {
+      "matchPackageNames": ["@mdx-js/react"],
+      "allowedVersions": "<2"
+    }
   ]
 }
